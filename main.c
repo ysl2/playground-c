@@ -43,9 +43,27 @@ int func01()
     return 0;
 }
 
+int func02()
+{
+    int cnt = 10;
+    unsigned int i;
+    int sig = 100;
+    for (i = cnt; i >= 0; --i)
+    {
+        printf("%d\n", i);
+        if (sig < 0)
+        {
+            return 1;
+        }
+        --sig;
+    }
+    return 0;
+}
+
 int main(int argc, char *argv[])
 {
     // func();
-    func01();
+    // func01();
+    func02();
     return 0;
 }
